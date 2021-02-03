@@ -4,6 +4,6 @@ export default class Rectangle {
     this.side2 = side2;
   }
   getArea() {
-    
+    return this.side1 * this.side2;
   }
 };
