@@ -16,4 +16,4 @@ export default class Triangle {
       return "isosceles triangle";
     }
   }
-};
+}
