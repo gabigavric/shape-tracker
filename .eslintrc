@@ -1,18 +1,20 @@
 {
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+      "ecmaVersion": 2018,
+      "sourceType": "module"
   },
   "extends": "eslint:recommended",
   "env": {
     "es6": true,
     "browser": true,
     "jquery": true,
-    "node": true
+    "node": true,
+    "jest": true //was getting error in tests "expect/test/etc not defined", needed to add this for error to go away -https://stackoverflow.com/questions/44479207/prevent-test-expect-etc-is-not-defined-errors-when-using-jest
   },
   "rules": {
-    "semi": 1,
-    "indent": ["warn", 2],
-    "no-debugger": "warn"
+      "semi": 1,
+      "indent": 0, //0 means ignore the indent rule. 
+      "no-debugger": 1 //we overird the defualt rule from 2-error, to 1-warn
+
   }
 }

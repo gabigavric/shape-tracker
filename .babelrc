@@ -1,3 +1,6 @@
+//jest uses node.js, whichuses require() instead of es6's import() and export()
+//so babel is used to transform import()/export() into require() so jest can use it
+ 
 {
   "env": {
     "test": {
